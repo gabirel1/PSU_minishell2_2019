@@ -30,7 +30,7 @@ SRC =		src/main.c					\
 
 MY_PRINTF = 	$(wildcard lib/my_printf/*.c)
 
-CFLAGS = 	-Wextra -W -Wall -Wextra
+CFLAGS = 	-Wextra -W -Wall -Werror
 
 DEBUG = 	-g3
 

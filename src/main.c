@@ -30,7 +30,7 @@ int main(int ac, char *av[], char *env[])
     save_streams(&shell);
 
     if (ac >= 2) {
-        write(1, "error\n", 6);
+        my_printf("error\n");
         return (84);
     } else {
         shell.new_env = return_tab(env);
@@ -39,4 +39,5 @@ int main(int ac, char *av[], char *env[])
         init_shell(env, &shell);
         return (0);
     }
+    return (0);
 }
